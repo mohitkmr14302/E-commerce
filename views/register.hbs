@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sagement {
+            margin: 10px;
+        }
+
+        .area {
+            width: 95%;
+            padding: 3px;
+            margin: 4px;
+        }
+
+        .formbox {
+            border: 2px solid red;
+            padding: 20px;
+            width: 331px;
+            border: 2px solid black;
+            margin: 68px auto;
+            border-radius: 20px;
+        }
+
+
+
+        .btn {
+            background-color: black;
+            color: rgb(94, 199, 134);
+            font-size: 13px;
+            position: relative;
+            padding: 7px 20px;
+            border: 2px solid rgb(94, 199, 134);
+            left: 10px;
+            bottom: 3px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .tittle {
+            background-color: #64605c;
+            margin: 20px 0px;
+            padding: 25px 99px;
+            color: thistle;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .tittle span {
+            color: tomato;
+        }
+
+        #sub {
+
+            background-color: rgb(99 95 195 / 38%);
+            font-size: medium;
+            border-radius: 2px;
+            width: 100%;
+            margin: 5px;
+            height: 32px;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    {{!-- {{>navbar}} --}}
+    {{>navbar}}
+    <div class="formbox">
+        <p class="tittle">Shop<span>Karo</span></p>
+        <form action="/register" method="POST">
+
+            <div class="segment"> Name: <input type="text" name="firstname" class="area" </div>
+                <div class="segment"> Gender: Male<input type="radio" name="gender" id="gender">
+                    Female<input type="radio" name="gender" id="gender"></div>
+                <div class="segment"> Email: <input type="email" name="email" class="area"> </div>
+                <div class="segment">Phone No.: <input type="text" name="phone" minlength="10" maxlength="10"
+                        class="area" id=""></div>
+                <div class="segment">Password: <input type="password" name="password" class="area" id="" </div>
+                    <div class="segment">Password: <input type="password" name="cpassword" class="area" </div>
+                        <div>
+                            <button id="sub">Submit</button>
+                        </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

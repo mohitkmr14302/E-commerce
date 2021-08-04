@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .formbox {
+            padding: 20px;
+            width: 331px;
+            border: 2px solid black;
+            margin: 68px auto;
+            border-radius: 20px;
+        }
+
+           .tittle {
+               background-color: #64605c;
+    margin: 20px 0px;
+    padding: 25px 99px;
+    color: thistle;
+    font-size: 30px;
+    font-weight: bold;
+        }
+
+        .tittle span {
+            color: tomato;
+        }
+
+        .para {
+            margin: 0;
+            display: block;
+        }
+
+      
+
+        .area {
+            width: 95%;
+            padding: 3px;
+            margin: 4px;
+        }
+
+        .sagement {
+            margin: 10px;
+        }
+
+        #subject {
+            color: black;
+            border: 2px solid;
+            display: inline-block;
+            text-decoration: none;
+            background-color: rgb(99 95 195 / 38%);
+            font-size: medium;
+            border-radius: 2px;
+            width: 100%;
+            height: 32px;
+            text-align: center;
+        }
+
+        #sub {
+
+            background-color: rgb(99 95 195 / 38%);
+            font-size: medium;
+            border-radius: 2px;
+            width: 100%;
+            height: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="formbox">
+        <p class="tittle">Code<span>Karo</span></p>
+        <div class="mainbox">
+            <form action="/login" method="POST">
+                <div class="segment">
+                    <P class="para">Email or mobile phone number</P>
+                    <input type="email" name="email" id="" class="area">
+                </div>
+                <div class="segment">
+                    <p class="para">Enter password</p>
+                    <input type="password" name="password" id="" class="area">
+                </div>
+                <div class="segment">
+                    <button class="area" type="submit" id="sub" name="login">Log In</button>
+                
+                    <p>By continuing, you agree to our's <a href="#"> Conditions of Use</a> and <a href="#"> Privacy
+                            Notice</a>.</p>
+                </div>
+            </form>
+            <details>
+                <summary>Need Help?</summary>
+                <div>
+
+                    <a href="#">Forgot password</a>
+                </div>
+                <a href="#">Other issues with Sign-In</a>
+            </details>
+        </div>
+        <hr>
+        <a id="subject" href="/register">Create a new account</a>
+        {{!-- <button id="sub">Create a new account</button> --}}
+    </div>
+
+</body>
+
+</html>
